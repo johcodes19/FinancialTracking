@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: #000;
+  color: #FFD700;
+  padding: 1rem;
+}
+
+/* Typography */
+.app-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.app-subtitle {
+  font-size: 1.25rem;
+  color: #DAA520;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.current-month {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+/* Layout */
+.text-center {
+  text-align: center;
+}
+
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mt-4 { margin-top: 1rem; }
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+/* Cards */
+.card {
+  background-color: #1a1506;
+  border: 2px solid #FFD700;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Metrics */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: linear-gradient(135deg, #1a1506 0%, #2d2410 100%);
+  border: 2px solid #FFD700;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #DAA520;
+  margin-top: 0.5rem;
+}
+
+/* Tabs */
+.tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.tab-button {
+  background-color: #1a1506;
+  color: #FFD700;
+  padding: 0.5rem 1rem;
+  border: 2px solid #FFD700;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.tab-button:hover {
+  background-color: #2d2410;
+}
+
+.tab-active {
+  background-color: #FFD700 !important;
+  color: #000 !important;
+}
+
+/* Inputs */
+.input,
+.table-input {
+  background-color: #1a1506;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.input:focus,
+.table-input:focus {
+  outline: none;
+  border-color: #FFA500;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.add-button {
+  background-color: #FFD700;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.add-button:hover {
+  background-color: #FFA500;
+}
+
+.delete-button {
+  background-color: #8B0000;
+  color: #FFD700;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.delete-button:hover {
+  background-color: #A52A2A;
+}
+
+/* Tables */
+.table-container {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #2d2410;
+}
+
+.data-table th {
+  background-color: #1a1506;
+  font-weight: bold;
+}
+
+.table-footer {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.total-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Breakdown */
+.breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #1a1506;
+  border-radius: 0.25rem;
+}
+
+.breakdown-item-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #2d2410;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+}
+
+/* Debt Summary */
+.debt-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.summary-item {
+  padding: 1rem;
+  background-color: #1a1506;
+  border-radius: 0.25rem;
+}
+
+.summary-value {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+/* Budget */
+.budget-subtitle {
+  color: #DAA520;
+  margin-bottom: 1rem;
+}
+
+.budget-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.budget-summary-item {
+  padding: 1rem;
+  background-color: #1a1506;
+  border-radius: 0.25rem;
+}
+
+.budget-summary-value {
+  font-size: 1.5rem;
+}
+
+/* Analytics */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.analytics-card {
+  padding: 1rem;
+  background-color: #1a1506;
+  border-radius: 0.25rem;
+}
+
+.analytics-value {
+  font-size: 1.5rem;
+}
+
+.analytics-subtitle {
+  font-size: 0.875rem;
+  color: #DAA520;
+  margin-top: 0.25rem;
+}
+
+.chart-placeholder {
+  text-align: center;
+  padding: 2rem;
+  color: #DAA520;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #DAA520;
+}
+
+.footer-date {
+  margin-top: 0.5rem;
+}
+
+/* Utility Classes */
+.font-bold {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 1.75rem;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-value {
+    font-size: 1.5rem;
+  }
+
+  .data-table {
+    font-size: 0.875rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.5rem;
+  }
+
+  .tabs-container {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    padding: 2rem;
+  }
+
+  .app-title {
+    font-size: 3rem;
+  }
+}

@@ -1,30 +1,70 @@
-I've created a comprehensive financial management app called Money Lodge by Empire Domination with the following features:
-Key Features:
+# Getting Started with Create React App
 
-Month/Year Selection - Select any month and year (currently defaulted to October 2025)
-Income Tracking - Add multiple income sources with dates and amounts
-Expense Management - Track expenses by category with descriptions and dates
-Debt Calculator - Monitor debts with balances, interest rates, monthly payments, and automatic payoff timeline calculations
-Bills & Subscriptions - Track upcoming bills with due dates and recurring status
-Budget Planning - Set planned budgets by category, track actual spending, see differences and percentage usage
-Financial Analytics - Comprehensive metrics including:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Savings rate
-Expense ratio
-Debt service ratio
-Emergency fund goal (6 months expenses)
-Financial freedom number (25x annual expenses)
-Visual pie chart showing income distribution
+## Available Scripts
 
+In the project directory, you can run:
 
-Automatic Calculations:
+### `npm start`
 
-Net cash flow after all obligations
-Remaining money after savings, bills, and debt payments
-Debt-to-income ratios
-Months to debt payoff
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Data Persistence - All data saved to browser localStorage, persists across sessions
-Fully Responsive - Works on mobile, tablet, and desktop
-Black & Gold Theme - Professional Empire Domination branding
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
