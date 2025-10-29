@@ -382,3 +382,16 @@ button {
     font-size: 3rem;
   }
 }
+
+/* Add to existing styles */
+.metric-card-expenses .metric-value {
+  color: #FF0000;
+}
+
+.metric-card-cashflow .metric-value {
+  color: #00FF00;
+}
+
+.metric-card-savings .metric-value {
+  color: #4169E1;
+}
